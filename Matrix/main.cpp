@@ -27,13 +27,13 @@ int main()
     start = chrono::high_resolution_clock::now();
     D+=A;
     end = chrono::high_resolution_clock::now();
-    chrono::duration<double> elapsed = end - start;
+    elapsed = end - start;
     cout << "TIME TAKEN TO COMPUTE D+=A: "<<chrono::duration_cast<std::chrono::nanoseconds>(elapsed).count()<<" nanoseconds"<<endl;
     cout<<D;
     start = chrono::high_resolution_clock::now();
     D*=A;
     end = chrono::high_resolution_clock::now();
-    chrono::duration<double> elapsed = end - start;
+    elapsed = end - start;
     cout << "TIME TAKEN TO COMPUTE D*=A: "<<chrono::duration_cast<std::chrono::nanoseconds>(elapsed).count()<<" nanoseconds"<<endl;
     cout<<D;
     cout<<"\n--COMPLEX MATRIX OPERATIONS--"<<endl;
